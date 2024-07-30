@@ -20,7 +20,7 @@ The project is a REST API service for working with a sensor for measuring ambien
 
 2. Navigate to the project directory: cd temperature-sensor-rest-api
 
-3. Configure the database connection in src/main/java/com/RestApiProject/target/classes/application.properties.:
+3. Configure the database connection in src/main/java/com/RestApiProject/target/classes/application.properties
 - spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
 - spring.datasource.username=your_username
 - spring.datasource.password=your_password
