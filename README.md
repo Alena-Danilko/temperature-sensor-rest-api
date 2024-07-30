@@ -1,68 +1,83 @@
 # Temperature Sensor REST API
-Этот проект представляет собой REST API сервис для работы с датчиком измерения температуры окружающего воздуха и определения наличия дождя. Проект также включает в себя клиентскую часть для отправки данных на REST API.
+The project is a REST API service for working with a sensor for measuring ambient air temperature and detecting the presence of rain. The project also includes a Client part for sending data to the REST API.
 
-# Особенности:
-1) Измерение температуры окружающего воздуха.
-2) Определение наличия дождя.
-3) REST API сервис для получения и отправки данных.
-4) Клиентское приложение для отправки данных на сервер.
-5) Использование Java, PostgreSQL и Hibernate.
+## Features:
+- REST API service for receiving and sending data.
+- Measuring ambient air temperature.
+- Detecting rain.
+- Client application for sending data to the server.
 
-# Требования
-1) Java 8+
-2) Maven
-3) PostgreSQL
-4) Spring Boot
-5) Hibernate
-6) JUnit 5
+## Technologies:
+- Java 8+
+- Maven
+- PostgreSQL
+- Spring Boot
+- Hibernate
+- JUnit 5
 
-# API Endpoints
-GET /measurements - Получить все измерения из базы данных.
+## Installation
+1. Clone the repository: git clone [https://github.com/Alena-Danilko/temperature-sensor-rest-api.git](https://github.com/Alena-Danilko/temperature-sensor-rest-api.git)
 
-GET /measurements//rainyDaysCount - Получить количество дождливых дней из базы данных.
+2. Navigate to the project directory: cd temperature-sensor-rest-api
 
-POST /measurements/add - Отправить данные с датчика на сервер.
+3. Configure the database connection in src/main/java/com/RestApiProject/target/classes/application.properties.:
+- spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
+- spring.datasource.username=your_username
+- spring.datasource.password=your_password
 
-POST /sensors/registration - Регистрация нового сенсора в системе.
+4. Build the project: mvn clean install
 
-# Структура проекта
-# Основной код
-src/main/java/com/RestApiProject - Исходный код сервера.
+## Usage
+1. Run the application: mvn spring-boot:run
+2. The API will be available at http://localhost:8080
+   
+## API Endpoints
+GET /measurements - Get all measurements from the database.
 
-src/main/java/com/RestApiProject/controllers - REST контроллеры.
+GET /measurements//rainyDaysCount - Get the number of rainy days from the database.
 
-src/main/java/com/RestApiProject/dto - Объекты передачи данных (DTO).
+POST /measurements/add - Send data from the sensor to the server.
 
-src/main/java/com/RestApiProject/models - Модели данных.
+POST /sensors/registration - Register a new sensor in the system.
 
-src/main/java/com/RestApiProject/repositories - Репозитории для работы с базой данных.
 
-src/main/java/com/RestApiProject/service - Бизнес-логика.
+## Project structure
+## Main code
+src/main/java/com/RestApiProject - Server source code.
 
-src/main/java/com/RestApiProject/util - Вспомогательные классы для обработки исключений и валидации.
+src/main/java/com/RestApiProject/controllers - REST controllers.
 
-src/main/java/com/RestApiProject/target/classes/application.properties - Конфигурационный файл.
+src/main/java/com/RestApiProject/dto - Data Transfer Object (DTO).
 
-src/main/java - Исходный код клиента.
+src/main/java/com/RestApiProject/models - Data Models.
 
-src/main/java/dto - Объекты передачи данных.
+src/main/java/com/RestApiProject/repositories - Repositories for working with the database.
 
-# Тестирование
-src/test/java/com/RestApiProject - Тесты для серверной части.
+src/main/java/com/RestApiProject/service - Business logic of the app.
 
-src/main/java/com/RestApiProject/controllersTest - Тесты для REST контроллеров.
+src/main/java/com/RestApiProject/util - Helper classes for exception handling and validation.
 
-src/main/java/com/RestApiProject/dtoTest - Тесты для объектов передачи данных (DTO).
+src/main/java/com/RestApiProject/target/classes/application.properties - Configuration file.
 
-src/main/java/com/RestApiProject/modelsTest - Тесты для моделей данных.
+src/main/java - Client source code.
 
-src/main/java/com/RestApiProject/repositoriesTest - Тесты для репозиториев.
+src/main/java/dto - Data Transfer Object for Client.
 
-src/main/java/com/RestApiProject/serviceTest - Тесты для сервисов.
+## Testing
+src/test/java/com/RestApiProject - Tests for the server source code.
 
-src/main/java/com/RestApiProject/utilTest - Тесты для вспомогательных классов для обработки исключений и валидации.
+src/main/java/com/RestApiProject/controllersTest - Tests for REST controllers.
 
-src/test/java - Тесты для клиентской части.
+src/main/java/com/RestApiProject/dtoTest - Tests for Data Transfer Object.
 
-# Конфигурация базы данных
-Настройки подключения к базе данных находятся в файле src/main/java/com/RestApiProject/target/classes/application.properties. Убедитесь, что вы правильно настроили URL, имя пользователя и пароль для вашей PostgreSQL базы данных.
+src/main/java/com/RestApiProject/modelsTest - Tests for Data Models.
+
+src/main/java/com/RestApiProject/repositoriesTest - Tests for repositories.
+
+src/main/java/com/RestApiProject/serviceTest - Tests for business logic.
+
+src/main/java/com/RestApiProject/utilTest - Tests for helper classes for exception handling and validation.
+
+src/test/java - Tests for client source code.
+
+
