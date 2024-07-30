@@ -1,13 +1,13 @@
 # Temperature Sensor REST API
 The project is a REST API service for working with a sensor for measuring ambient air temperature and detecting the presence of rain. The project also includes a Client part for sending data to the REST API.
 
-## Features:
+## Features
 - REST API service for receiving and sending data.
 - Measuring ambient air temperature.
 - Detecting rain.
 - Client application for sending data to the server.
 
-## Technologies:
+## Technologies
 - Java 8+
 - Maven
 - PostgreSQL
