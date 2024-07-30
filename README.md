@@ -16,7 +16,7 @@ The project is a REST API service for working with a sensor for measuring ambien
 - JUnit 5
 
 ## Installation
-1. Clone the repository: git clone [https://github.com/Alena-Danilko/temperature-sensor-rest-api.git](https://github.com/Alena-Danilko/temperature-sensor-rest-api.git)
+1. Clone the repository: git clone https://github.com/Alena-Danilko/temperature-sensor-rest-api.git
 
 2. Navigate to the project directory: cd temperature-sensor-rest-api
 
