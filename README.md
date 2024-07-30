@@ -66,17 +66,17 @@ src/main/java/dto - Data Transfer Object for Client.
 ## Testing
 src/test/java/com/RestApiProject - Tests for the server source code.
 
-src/main/java/com/RestApiProject/controllersTest - Tests for REST controllers.
+src/test/java/com/RestApiProject/controllersTest - Tests for REST controllers.
 
-src/main/java/com/RestApiProject/dtoTest - Tests for Data Transfer Object.
+src/test/java/com/RestApiProject/dtoTest - Tests for Data Transfer Object.
 
-src/main/java/com/RestApiProject/modelsTest - Tests for Data Models.
+src/test/java/com/RestApiProject/modelsTest - Tests for Data Models.
 
-src/main/java/com/RestApiProject/repositoriesTest - Tests for repositories.
+src/test/java/com/RestApiProject/repositoriesTest - Tests for repositories.
 
-src/main/java/com/RestApiProject/serviceTest - Tests for business logic.
+src/test/java/com/RestApiProject/serviceTest - Tests for business logic.
 
-src/main/java/com/RestApiProject/utilTest - Tests for helper classes for exception handling and validation.
+src/test/java/com/RestApiProject/utilTest - Tests for helper classes for exception handling and validation.
 
 src/test/java - Tests for client source code.
 
