@@ -34,7 +34,7 @@ The project is a REST API service for working with a sensor for measuring ambien
 ## API Endpoints
 GET /measurements - Get all measurements from the database.
 
-GET /measurements//rainyDaysCount - Get the number of rainy days from the database.
+GET /measurements/rainyDaysCount - Get the number of rainy days from the database.
 
 POST /measurements/add - Send data from the sensor to the server.
 
